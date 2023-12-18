@@ -1,0 +1,11 @@
+<form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="devlet ekle">
+</form>
+
+
+<form method="POST" action="{% url 'queryapp:delete_devlet' slug=devlet.slug %}">
+    {% csrf_token %}
+    <input type="submit" value="Yık">
+</form>

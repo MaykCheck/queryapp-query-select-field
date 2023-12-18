@@ -1,0 +1,11 @@
+<h2>darkness</h2>
+
+<a href="http://127.0.0.1:8000/devlet_ekle/">devlet ekle</a>
+<br><hr>
+#########################################################
+<br><hr>
+
+{% for devlet in devletler %}
+    <a href="{{ devlet.get_absolute_url }}">{{ devlet.başkent }}</a>
+    <hr></br>
+{% endfor %}

@@ -1,0 +1,10 @@
+<div class="card">
+    <div class="container">
+        <form method="POST">
+            {% csrf_token %}
+            {{ user_form.as_p }}
+            {{ profile_form.as_p }}
+            <button class="button" type="submit">Kayıt Ol</button>
+        </form>
+    </div>
+</div>
