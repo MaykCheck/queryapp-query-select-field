@@ -1,8 +1,0 @@
-<h1>Country: {{ devlet.ülke }}</h1>
-<h2>Capital: {{ devlet.başkent }}</h2>
-<h3>Cities: {{ devlet.şehir }}</h3>
-
-<form method="POST" action="{% url 'queryapp:delete_devlet' slug=devlet.slug %}">
-    {% csrf_token %}
-    <input type="submit" value="Yık">
-</form>
